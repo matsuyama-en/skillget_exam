@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Daily Life Level Check Test</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F9F6F0;
+    --ink: #1A1714;
+    --muted: #6B6560;
+    --border: #DDD9D2;
+    --accent: #2E6B4F;
+    --accent-light: #EAF3ED;
+    --red: #8B2020;
+    --red-light: #FAECEC;
+    --red-border: #DBA8A8;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .wrap { max-width: 480px; width: 100%; }
+  .header { text-align: center; margin-bottom: 2.5rem; }
+  .label {
+    font-size: 11px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: .6rem;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: .5rem;
+  }
+  .sub { font-size: 14px; color: var(--muted); }
+  .cards { display: flex; flex-direction: column; gap: 1rem; }
+  .card {
+    display: block;
+    text-decoration: none;
+    border-radius: var(--radius);
+    padding: 1.5rem 1.75rem;
+    border: 1px solid var(--border);
+    transition: transform .15s, box-shadow .15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.08); }
+  .card-student { background: white; border-color: #B8DCCA; }
+  .card-coach  { background: #1A1A1F; border-color: #38383F; }
+  .card-icon { font-size: 28px; margin-bottom: .6rem; display: block; }
+  .card-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: .3rem;
+  }
+  .card-student .card-title { color: var(--accent); }
+  .card-coach  .card-title { color: #EEEAE4; }
+  .card-desc { font-size: 13px; line-height: 1.55; }
+  .card-student .card-desc { color: var(--muted); }
+  .card-coach  .card-desc { color: #888590; }
+  .card-arrow {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    opacity: .35;
+  }
+  .card-student .card-arrow { color: var(--accent); }
+  .card-coach  .card-arrow { color: #EEEAE4; }
+  .warning {
+    margin-top: .75rem;
+    background: var(--red-light);
+    border: 1px solid var(--red-border);
+    border-radius: 8px;
+    padding: .7rem 1rem;
+    font-size: 12px;
+    color: var(--red);
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    line-height: 1.5;
+  }
+  .footer { margin-top: 2.5rem; text-align: center; font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <p class="label">CEFR A1–B2 &nbsp;·&nbsp; Daily Life Theme</p>
+    <h1>English Level<br>Check Test</h1>
+    <p class="sub">30 minutes &nbsp;·&nbsp; 3 sections</p>
+  </div>
+
+  <div class="cards">
+
+    <a class="card card-student" href="student_sheet.html">
+      <span class="card-icon">📋</span>
+      <div class="card-title">Student Sheet</div>
+      <p class="card-desc">Writing, Listening &amp; Speaking test for students. Open this page during your session.</p>
+      <span class="card-arrow">→</span>
+    </a>
+
+    <a class="card card-coach" href="coach_guide.html">
+      <span class="card-icon">🔒</span>
+      <div class="card-title">Coach Guide</div>
+      <p class="card-desc">Answer key, listening scripts, speaking questions &amp; evaluation rubric.</p>
+      <span class="card-arrow">→</span>
+    </a>
+
+  </div>
+
+  <div class="warning">
+    ⚠️ <span>The Coach Guide contains all answers. Share only the Student Sheet link with students.</span>
+  </div>
+
+  <div class="footer">English Daily Life Level Check Test &nbsp;·&nbsp; CEFR A1–B2</div>
+</div>
+</body>
+</html>
